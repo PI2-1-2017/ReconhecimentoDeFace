@@ -5,13 +5,10 @@ from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QInputDialog, QL
 
 from threading import Thread
 
-from UploadFile import FileDialog
-
 import qdarkstyle
 import numpy as np
 import cv2
 import sys
-
 
 
 # Adaptado de:
@@ -88,7 +85,7 @@ class VideoFrame(QtWidgets.QWidget, guiLayout):
         self.setupImgWindows()
 
         self.startButton.clicked.connect(self.start_clicked)
-        self.imageButton.clicked.connect(self.open_image)
+        #self.imageButton.clicked.connect(self.open_image)
 
         self.videoThread = VideoThreadClass(self.window_width, self.window_height)
         self.videoThread.start()
@@ -116,8 +113,8 @@ class VideoFrame(QtWidgets.QWidget, guiLayout):
             self.startButton.setText('Iniciar Busca')
             self.VidFrame.hide()
 
-    def open_image(self):
-       	FileDialog()
+    #def open_image(self):
+        # Image code goes here.
  
     def closeEvent(self, event):
         self.running = False
