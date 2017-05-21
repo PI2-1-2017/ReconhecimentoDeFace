@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>644</width>
-    <height>405</height>
+    <width>744</width>
+    <height>505</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,8 +18,8 @@
     <rect>
      <x>1</x>
      <y>0</y>
-     <width>642</width>
-     <height>404</height>
+     <width>742</width>
+     <height>504</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
@@ -54,8 +54,8 @@
      <widget class="QWidget" name="VidFrame" native="true">
       <property name="minimumSize">
        <size>
-        <width>640</width>
-        <height>360</height>
+        <width>740</width>
+        <height>460</height>
        </size>
       </property>
      </widget>

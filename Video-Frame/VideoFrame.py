@@ -91,12 +91,13 @@ class VideoFrame(QtWidgets.QWidget, guiLayout):
         self.videoThread.start()
         self.videoThread.newFrame.connect(self.update_frame)
 
-
+    # VidFrame is the name of the widget object in the .ui file.
     def update_frame(self, image):
         
         # display latest frame from video thread
         self.VidFrame.setImage(image)
 
+    # Setup the video frame in the window according to the width and height definied in the .ui file.
     def setupImgWindows(self):
         self.window_width = self.VidFrame.frameSize().width()
         self.window_height = self.VidFrame.frameSize().height()
