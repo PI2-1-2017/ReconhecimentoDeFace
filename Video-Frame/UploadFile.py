@@ -9,7 +9,8 @@ class FileDialog(QWidget):
 		
 	def openFileDialog(self):
 		options = QFileDialog.Options()
-		fileName, _ = QFileDialog.getOpenFileName(self, "Select Image", "/home/priscillag/Desktop/PyQt5", "Images (*.png *.xpm *.jpg)", options=options)
+		options |= QFileDialog.DontUseNativeDialog
+		fileName, _ = QFileDialog.getOpenFileName(self, "Selecionar Imagem", "/home", "Images (*.png *.xpm *.jpg)", options=options)
 		if fileName:
 			print(fileName)
 
